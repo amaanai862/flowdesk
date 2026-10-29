@@ -1,0 +1,13 @@
+{
+  "name": "flowdesk",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "server"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w frontend",
+    "server": "npm run dev -w server",
+    "build": "npm run build -w frontend && npm run build -w server"
+  }
+}
